@@ -39,11 +39,15 @@ namespace Calculator_2._0
             else if (op == "**") // if statement for if user uses power
             {
                 int num3 = num1;
-                for (int i = 0; i < num2; i++) 
+                for (int i = 0; i < num2; i++)
                 {
                     num3 = num3 * num1;
                 }
                 resultBox.Text = Convert.ToString(num3);
+            }
+            else 
+            {
+                MessageBox.Show("Please input a valid equation using the operators +,-,*,/,**. ex:32 / 12");
             }
 
 
